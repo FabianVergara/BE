@@ -10,5 +10,6 @@ namespace SegurosBeLife
     {
         private String _rut;
         private String _nombre;
+        private string pruebajoselin;
     }
 }
