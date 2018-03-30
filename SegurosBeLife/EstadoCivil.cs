@@ -8,6 +8,6 @@ namespace SegurosBeLife
 {
    public enum  EstadoCivil
     { 
-        
+        Soltero,Casado,Divorciado,Viudo
     }
 }
