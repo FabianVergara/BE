@@ -13,7 +13,12 @@ namespace ClienteCollection
 
         //Crear una conexion
         SqlConnection conexion;
-        String cadena=
-
+        String cadena= @"Data Source = url;Initial Catalog=nombredelabasededatos;Persist Security Info=True;User ID=nombre;Password=contraseña";
+        public ClienteCollection()
+        {
+            //instanciar conexion
+            conexion = new SqlConnection(cadena);
+        }
+        //C.R.U.D
     }
 }
