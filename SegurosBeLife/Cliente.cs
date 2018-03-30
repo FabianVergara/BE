@@ -13,7 +13,7 @@ namespace SegurosBeLife
         private String _apellidos;
         private DateTime _fechaNaci;
         private Sexo _sexo;
-        private EstadoCivil _estado;
+        private EstadoCivil _estado;//easy
 
         public string Rut
         {
