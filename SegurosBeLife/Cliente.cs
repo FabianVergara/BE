@@ -8,5 +8,7 @@ namespace SegurosBeLife
 {
    public class Cliente
     {
+        private String _rut;
+        private String _nombre;
     }
 }
