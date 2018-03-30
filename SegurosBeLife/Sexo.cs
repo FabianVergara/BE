@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SegurosBeLife
 {
-    class Sexo
+    public enum Sexo
     {
+        Feminino,Masculino,Otros
     }
 }

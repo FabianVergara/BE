@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SegurosBeLife
 {
-    class EstadoCivil
-    {
+   public enum  EstadoCivil
+    { 
+        
     }
 }
