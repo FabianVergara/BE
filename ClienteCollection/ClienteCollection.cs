@@ -22,12 +22,53 @@ namespace ClienteCollection
         }
         //C.R.U.D
         public Boolean Registrar(Cliente cli) {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+                if (conexion.State==System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                Logger.Message(ex.Message);
+                return false;
+                
+            }
         }
     
         public Boolean Eliminar(String rut) {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+                if (conexion.State==System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+
+                }
+                Logger.Message(Ex.Message);
+                return false;
+            }
         }
+
+        public ArrayList Listar(String Cliente) {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        //buscar
+        //actualizar
 
 
 
