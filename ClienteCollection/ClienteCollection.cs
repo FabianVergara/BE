@@ -14,7 +14,7 @@ namespace ClienteCollection
 
         //Crear una conexion
         SqlConnection conexion;
-        String cadena = @"Data Source = url;Initial Catalog=seguro;Persist Security Info=True;User ID=Sony-PC\Sony;Password=";
+        String cadena = @"Data Source = url;Initial Catalog=seguro;Persist Security Info=True;User ID=Sony-PC\Sony;Password=''";
         public ClienteCollection()
         {
             //instanciar conexion
