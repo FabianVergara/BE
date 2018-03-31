@@ -59,7 +59,7 @@ namespace ClienteCollection
                 cmd.Connection = conexion;
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "eliminar";
-                cmd.Parameters.Add("@rut", rut);
+                cmd.Parameters.AddWithValue("@rut", rut);
                 conexion.Open();
                 int x = cmd.ExecuteNonQuery();
                 conexion.Close();
@@ -113,7 +113,7 @@ namespace ClienteCollection
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "buscar";
-                cmd.Parameters.add("@rut", rut);
+                cmd.Parameters.AddWithValue("@rut", rut);
                 conexion.Open();
                 SqlDataAdapter ad = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -130,7 +130,7 @@ namespace ClienteCollection
 
         //actualizar
 
-        public boolean Actualizar()
+        public boolean Actualizar(Cliente cliv,Cliente clinuevo)//
         {
             try
             {
@@ -138,6 +138,7 @@ namespace ClienteCollection
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "actualizar";
+                cmd.Parameters.Add("@rut", rut);
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = cli._nombre;
                 cmd.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = cli._apellidos;
                 cmd.Parameters.Add("@fechaNacimiento", SqlDbType.Date).Value = cli._fechaNaci;
