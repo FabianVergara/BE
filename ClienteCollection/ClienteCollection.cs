@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using SegurosBeLife;
+using SegurosBeLife;//el nombre de la biblioteca que contiene el Modelo
 
 namespace ClienteCollection
 {
@@ -47,7 +47,7 @@ namespace ClienteCollection
                 {
                     conexion.Close();
                 }
-                Logger.Message(ex.Message);
+                Logger.Mensaje(ex.Message);
                 return false;
 
             }
