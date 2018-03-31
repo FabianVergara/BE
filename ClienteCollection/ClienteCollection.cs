@@ -24,6 +24,20 @@ namespace ClienteCollection
         public Boolean Registrar(Cliente cli) {
             try
             {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "insertar";
+                cmd.Parameters.Add("@rut", SqlDbType.VarChar, 50).Value = cli._rut;
+                cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = cli._nombre;
+                cmd.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = cli._apellidos;
+                cmd.Parameters.Add("@fechaNacimiento", SqlDbType.Date).Value = cli._fechaNaci;
+                cmd.Parameters.Add("@sexo", SqlDbType.Char, 1).Value = cli._sexo;
+                cmd.Parameters.Add("@estadoCivil", SqlDbType.Char, 1).Value = cli._estado;
+                conexion.Open();
+                int x = cmd.ExecuteNonQuery();
+                conexion.Close();
+                return x> 0;
 
             }
             catch (Exception ex)
