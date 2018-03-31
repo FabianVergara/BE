@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Vista
 {
     /// <summary>
-    /// Lógica de interacción para Buscar_Listar_Eliminar.xaml
+    /// Lógica de interacción para Buscar1.xaml
     /// </summary>
-    public partial class Buscar_Listar_Eliminar : Window
+    public partial class Buscar1 : Window
     {
-        public Buscar_Listar_Eliminar()
+        public Buscar1()
         {
             InitializeComponent();
         }
