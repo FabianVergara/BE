@@ -81,7 +81,16 @@ namespace ClienteCollection
         public DataTable Listar() {
             try
             {
-
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "listar";
+                conexion.Open();
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                conexion.Close();
+                return dt;
             }
             catch (Exception ex)
             {
@@ -91,32 +100,63 @@ namespace ClienteCollection
 
                 }
                 Logger.Message(Ex.Message);
-                return false;
+                return null;
             }
         }
 
         //buscar
-        public DataTable Buscar(String rut) {
+        public DataTable Buscar(String rut)
+        {
             try
             {
-
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "buscar";
+                cmd.Parameters.add("@rut", rut);
+                conexion.Open();
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                conexion.Close();
+                return dt;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                if (conexion.State == System.Data.ConnectionState.Open)
-                {
-                    conexion.Close();
-
-                }
-                Logger.Message(Ex.Message);
-                return false;
+                Logger.Mensaje(ex.Message);
+                return null;
             }
         }
-        
+
         //actualizar
 
+        public boolean Actualizar()
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conexion;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "actualizar";
+                cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = cli._nombre;
+                cmd.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = cli._apellidos;
+                cmd.Parameters.Add("@fechaNacimiento", SqlDbType.Date).Value = cli._fechaNaci;
+                cmd.Parameters.Add("@sexo", SqlDbType.Char, 1).Value = cli._sexo;
+                cmd.Parameters.Add("@estadoCivil", SqlDbType.Char, 1).Value = cli._estado;
+                conexion.Open();
+                int x = cmd.ExecuteNonQuery();
+                conexion.Close();
+                return x > 0;
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Mensaje(ex.Message);
+                return false;
+
+            }
 
 
 
-    }
+        }
 }
