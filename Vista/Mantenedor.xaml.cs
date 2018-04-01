@@ -23,16 +23,8 @@ namespace Vista
         {
             InitializeComponent();
         }
-
-        private void button3_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
+        
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)
         {
@@ -44,9 +36,21 @@ namespace Vista
 
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void btn_Listar_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        private void btn_buscar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_eliminar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        
     }
 }
