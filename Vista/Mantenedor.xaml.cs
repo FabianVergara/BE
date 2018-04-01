@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClienteCollection;
+using SegurosBeLife;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,12 +40,34 @@ namespace Vista
 
         private void btn_Listar_Click(object sender, RoutedEventArgs e)
         {
+            
+            try
+            {
+                
+                daoClienteCollection cl = new daoClienteCollection();
 
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Buscar");
+            }
         }
 
         private void btn_buscar_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                Cliente cli = new Cliente();
+                cli.Rut = txt_rut.Text;
+                daoClienteCollection cl = new daoClienteCollection();
+                
+            }
+            catch (Exception)
+            {
 
+                MessageBox.Show("Error Buscar");
+            }
         }
 
         private void btn_eliminar_Click(object sender, RoutedEventArgs e)
