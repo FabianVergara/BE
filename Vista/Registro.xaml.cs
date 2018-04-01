@@ -60,5 +60,10 @@ namespace Vista
                    
         }
 
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            Inicio ventana = new Vista.Inicio();
+            ventana.Show();
+        }
     }
 }

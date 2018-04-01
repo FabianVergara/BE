@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ClienteCollection;
+using SegurosBeLife;
 
 namespace Vista
 {
@@ -24,8 +26,12 @@ namespace Vista
             InitializeComponent();
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btn_buscar_Click(object sender, RoutedEventArgs e)
         {
+            Cliente cli = new Cliente();
+            cli.Rut = txt_rut.Text;
+            daoClienteCollection cl = new daoClienteCollection();
+            
 
         }
 
@@ -37,5 +43,6 @@ namespace Vista
 
             }
         }
+    }
     }
 }

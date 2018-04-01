@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using SegurosBeLife;//el nombre de la biblioteca que contiene el Modelo
+using System.Collections;
 
 namespace ClienteCollection
 {
@@ -131,6 +132,7 @@ namespace ClienteCollection
                 Logger.Mensaje(ex.Message);
                 return null;
             }
+         
         }
 
         //actualizar
