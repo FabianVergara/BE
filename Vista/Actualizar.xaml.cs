@@ -28,10 +28,11 @@ namespace Vista
 
         private void btn_buscar_Click(object sender, RoutedEventArgs e)
         {
+            //la logica seria la siguiente tomo el rut del buscar y desplego los datos en cada elemento , es decir les doy los valores a cada celda, luego aplico 
             Cliente cli = new Cliente();
             cli.Rut = txt_rut.Text;
             daoClienteCollection cl = new daoClienteCollection();
-            
+            String var = cl.Buscar(cli.Rut).Columns.Contains("Rut").ToString(); ;
 
         }
 
