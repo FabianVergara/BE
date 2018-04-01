@@ -33,6 +33,7 @@ namespace Vista
             tablita.Columns.Add("Fec_N");
             tablita.Columns.Add("Sexo");
             tablita.Columns.Add("Est_civ");
+            tbl_mantenedor.IsItemItsOwnContainer(tablita);
 
         }
         
