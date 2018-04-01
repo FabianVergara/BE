@@ -9,26 +9,16 @@
     <Grid>
         <GroupBox x:Name="groupBox" Header="Mantenedor" Margin="0,10,0,0" FontWeight="Bold">
             <Grid Margin="0,0,-2,-12" Background="#FFF7F702">
-                <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label2" Content="Apellidos:" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="71,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal"/>
-                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="18" Margin="71,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="18" Margin="71,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                <DatePicker HorizontalAlignment="Left" Margin="114,68,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
-                <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="97,95,0,0" VerticalAlignment="Top" Width="72" FontSize="9" FontWeight="Normal"/>
-                <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="97,118,0,0" VerticalAlignment="Top" Width="72" FontSize="9" FontWeight="Normal"/>
-                <ListBox x:Name="listBox" Margin="10,141,10,45"/>
+                <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="67,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal"/>
+                <ListBox x:Name="listBox" Margin="10,103,10,83"/>
                 <Button x:Name="button" Content="Volver" HorizontalAlignment="Left" Margin="24,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
-                <Button x:Name="button1" Content="Listar Todo" HorizontalAlignment="Left" Margin="207,223,0,0" VerticalAlignment="Top" Width="75" FontSize="9"/>
-                <Button x:Name="button2" Content="Actualizar" HorizontalAlignment="Left" Margin="238,24,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
-                <Button x:Name="button3" Content="Buscar" HorizontalAlignment="Left" Margin="238,4,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="button3_Click"/>
+                <Button x:Name="button1" Content="Listar Todo" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top" Width="75" FontSize="9"/>
+                <Button x:Name="button2" Content="Actualizar" HorizontalAlignment="Left" Margin="123,223,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
+                <Button x:Name="button3" Content="Buscar" HorizontalAlignment="Left" Margin="123,67,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="button3_Click"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="button4" Content="Eliminar" HorizontalAlignment="Left" Margin="245,70,0,0" VerticalAlignment="Top" Width="55" FontSize="9" FontWeight="Bold" Click="button4_Click"/>
+        <Button x:Name="button4" Content="Eliminar" HorizontalAlignment="Left" Margin="217,247,0,0" VerticalAlignment="Top" Width="55" FontSize="9" FontWeight="Bold" Click="button4_Click"/>
 
     </Grid>
 </Window>
