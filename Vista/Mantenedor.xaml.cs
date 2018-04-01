@@ -82,7 +82,15 @@ namespace Vista
 
         private void btn_eliminar_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error Eliminar");
+                throw;
+            }
         }
 
         

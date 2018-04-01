@@ -13,7 +13,6 @@
                 <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="67,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal"/>
                 <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="24,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9" Click="btn_volver_Click"/>
                 <Button x:Name="btn_listar" Content="Listar Todo" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top" Width="75" FontSize="9" Click="btn_Listar_Click"/>
-                <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="123,223,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="btn_actualizar_Click"/>
                 <Button x:Name="btn_buscar" Content="Buscar" HorizontalAlignment="Left" Margin="123,67,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="btn_buscar_Click"/>
                 <DataGrid x:Name="tbl_mantenedor" HorizontalAlignment="Left" Margin="24,108,0,0" VerticalAlignment="Top" Height="87" Width="266"/>
             </Grid>
