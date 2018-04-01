@@ -28,7 +28,7 @@
                 <Button x:Name="button3" Content="Buscar" HorizontalAlignment="Left" Margin="238,4,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="button3_Click"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="button4" Content="Eliminar" HorizontalAlignment="Left" Margin="245,70,0,0" VerticalAlignment="Top" Width="55" FontSize="9" FontWeight="Bold"/>
+        <Button x:Name="button4" Content="Eliminar" HorizontalAlignment="Left" Margin="245,70,0,0" VerticalAlignment="Top" Width="55" FontSize="9" FontWeight="Bold" Click="button4_Click"/>
 
     </Grid>
 </Window>

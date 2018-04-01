@@ -28,5 +28,10 @@ namespace Vista
         {
 
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
