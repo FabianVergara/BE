@@ -42,7 +42,7 @@ namespace Vista
                 cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
                 cli.Sexo = (Char)cbo_sexo.SelectedValue;
                 cli.Estado = (Char)cbo_ECivil.SelectedValue;
-                ClienteCollection cl = new ClienteCollection();
+                daoClienteCollection cl = new daoClienteCollection();
                 bool resp=cl.Registrar(cli);
                 if (resp == true)
                 {
@@ -60,9 +60,5 @@ namespace Vista
                    
         }
 
-        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
