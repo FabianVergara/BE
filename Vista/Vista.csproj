@@ -73,9 +73,6 @@
     <Compile Include="Actualizar.xaml.cs">
       <DependentUpon>Actualizar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Buscar_Listar_Eliminar.xaml.cs">
-      <DependentUpon>Buscar</DependentUpon>
-    </Compile>
     <Compile Include="Registro.xaml.cs">
       <DependentUpon>Registro.xaml</DependentUpon>
     </Compile>
@@ -83,10 +80,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <None Include="Buscar">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </None>
     <Page Include="Inicio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,6 +145,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClienteCollection\Controlador.csproj">
+      <Project>{048cf498-3088-403c-8986-bfb6036b4e6a}</Project>
+      <Name>Controlador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SegurosBeLife\Biblioteca.csproj">
+      <Project>{1f1214f0-7a5a-4d84-bcff-eb4bd7109327}</Project>
+      <Name>Biblioteca</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

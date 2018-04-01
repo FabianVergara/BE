@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="Seguros BeLife" Height="300" Width="300">
     <Grid>
-        <GroupBox x:Name="groupBox" Header="Registro Cliente" Margin="0,10,0,0" FontWeight="Bold">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="groupBox" Header="Registro Cliente" Margin="0,10,0,0" FontWeight="Bold" Grid.ColumnSpan="2">
             <Grid Margin="-5,0,-2,-12" Background="#FFF5F507">
                 <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="0,17,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top"/>
@@ -22,7 +26,7 @@
                 <ComboBox x:Name="cbo_ECivil" HorizontalAlignment="Left" Margin="105,171,0,0" VerticalAlignment="Top" Width="120" FontWeight="Normal"/>
                 <ComboBox x:Name="cbo_sexo" HorizontalAlignment="Left" Margin="105,141,0,0" VerticalAlignment="Top" Width="120" FontWeight="Normal"/>
                 <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="39,212,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal"/>
-                <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="176,212,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.502,0.136" FontWeight="Normal"/>
+                <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="176,212,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.502,0.136" FontWeight="Normal" Click="btnRegistrar_Click"/>
             </Grid>
         </GroupBox>
 
