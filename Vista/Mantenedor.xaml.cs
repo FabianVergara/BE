@@ -61,7 +61,7 @@ namespace Vista
             catch (Exception)
             {
 
-                MessageBox.Show("Error Buscar");
+                MessageBox.Show("Error Listar");
             }
         }
 

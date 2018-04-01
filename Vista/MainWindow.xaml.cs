@@ -25,9 +25,13 @@ namespace Vista
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
+      
 
+        private void btn_aceptar_Click(object sender, RoutedEventArgs e)
+        {
+            Inicio ventana = new Inicio();
+            ventana.Show();
+         
         }
     }
 }

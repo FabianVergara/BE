@@ -32,8 +32,8 @@ namespace Vista
             Cliente cli = new Cliente();
             cli.Rut = txt_rut.Text;
             daoClienteCollection cl = new daoClienteCollection();
-            String var = cl.Buscar(cli.Rut).Columns.Contains("Rut").ToString(); ;
-
+            String _rut = cl.Buscar(cli.Rut).Columns.Contains("Rut").ToString(); ;
+            
         }
 
         private void txt_buscar_TextChanged(object sender, TextChangedEventArgs e)
