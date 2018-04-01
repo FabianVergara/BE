@@ -57,7 +57,8 @@ namespace Vista
             {
                 
                 daoClienteCollection cl = new daoClienteCollection();
-
+                tablita.Rows.Add(cl.Listar());
+                tbl_mantenedor.IsItemItsOwnContainer(tablita);
             }
             catch (Exception)
             {
