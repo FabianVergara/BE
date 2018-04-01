@@ -10,12 +10,11 @@
         <GroupBox x:Name="groupBox" Header="Mantenedor" Margin="0,10,0,0" FontWeight="Bold">
             <Grid Margin="0,0,-2,-12" Background="#FFF7F702">
                 <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="67,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal"/>
+                <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="67,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal"/>
                 <ListBox x:Name="listBox" Margin="10,103,10,83"/>
                 <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="24,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
                 <Button x:Name="btn_listar" Content="Listar Todo" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top" Width="75" FontSize="9" Click="button1_Click"/>
-                <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="123,223,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
-                <Button x:Name="btn_buscar" Content="Buscar" HorizontalAlignment="Left" Margin="123,67,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="button3_Click"/>
+                <Button x:Name="btn_buscar" Content="Buscar" HorizontalAlignment="Left" Margin="123,67,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="btn_buscar"/>
             </Grid>
         </GroupBox>
         <Button x:Name="btn_eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="217,247,0,0" VerticalAlignment="Top" Width="55" FontSize="9" FontWeight="Bold" Click="button4_Click"/>

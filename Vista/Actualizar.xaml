@@ -14,22 +14,25 @@
         <Grid Margin="0,0,-33,-13" Grid.ColumnSpan="2">
             <GroupBox x:Name="groupBox" Header="Actualizar" Margin="29,0,37,-11" FontWeight="Bold" Height="301" VerticalAlignment="Top">
                 <Grid Margin="0,8,0,0" Background="#FFF7F702" HorizontalAlignment="Left" Width="384" Height="262" VerticalAlignment="Top" IsHitTestVisible="False">
-                    <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label2" Content="Apellidos:" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="71,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False" IsEnabled="False"/>
-                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="18" Margin="71,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="18" Margin="71,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="114,68,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
-                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="97,95,0,0" VerticalAlignment="Top" Width="72" FontSize="9" FontWeight="Normal"/>
-                    <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="97,118,0,0" VerticalAlignment="Top" Width="72" FontSize="9" FontWeight="Normal"/>
-                    <Button x:Name="button" Content="Volver" HorizontalAlignment="Left" Margin="24,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
-                    <Button x:Name="button2" Content="Actualizar" HorizontalAlignment="Left" Margin="218,223,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
+                    <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="40,73,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label2" Content="Apellidos:" HorizontalAlignment="Left" Margin="40,104,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="225,87,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="40,156,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False" IsEnabled="False"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="18" Margin="125,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="18" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
+                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="123,138,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
+                    <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="123,164,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
+                    <Button x:Name="button" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
+                    <Button x:Name="button2" Content="Actualizar" HorizontalAlignment="Left" Margin="258,239,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
+                    <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="23" Margin="107,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label6" Content="Buscar por Rut" HorizontalAlignment="Left" Margin="9,7,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </GroupBox>
+            <Button x:Name="btn_buscar" Content="Button" HorizontalAlignment="Left" Margin="293,36,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0,0"/>
 
         </Grid>
 

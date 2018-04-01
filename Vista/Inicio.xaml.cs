@@ -23,5 +23,29 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void btnRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            Registro venRe = new Registro();
+            venRe.Show();
+        }
+
+        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            Mantenedor venBuscar =new Mantenedor();
+            venBuscar.Show();
+        }
+
+        private void btnActualizar_Click(object sender, RoutedEventArgs e)
+        {
+            Actualizar venUpdate = new Actualizar();
+            venUpdate.Show();
+        }
+
+        private void btnCerrarSe_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow veninicio = new MainWindow();
+            veninicio.Show()
+        }
     }
 }

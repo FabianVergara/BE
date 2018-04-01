@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SegurosBeLife;
+using System.Data;
+using ClienteCollection;
 
 namespace Vista
 {
@@ -22,10 +25,26 @@ namespace Vista
         public Mantenedor()
         {
             InitializeComponent();
+            
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void btn_buscar(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                Cliente cli = new Cliente();
+                cli.Rut = txt_rut.Text;
+                daoClienteCollection cl = new  daoClienteCollection();
+                foreach (var item in collection)
+                {
+
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Buscar");
+            }
 
         }
 
@@ -33,5 +52,7 @@ namespace Vista
         {
 
         }
+
+       
     }
 }
