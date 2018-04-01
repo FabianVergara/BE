@@ -28,5 +28,14 @@ namespace Vista
         {
 
         }
+
+        private void txt_buscar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string rut = txt_buscar.Text;
+            if (rut.Length >= 9)
+            {
+
+            }
+        }
     }
 }
