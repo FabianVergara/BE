@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SegurosBeLife;//MODELO
+using ClienteCollection;//CONTROLADOR
 
 namespace Vista
 {
@@ -22,6 +24,30 @@ namespace Vista
         public Registro()
         {
             InitializeComponent();
+            //inicializar Combo Box
+            cbo_ECivil.ItemsSource = Enum.GetValues(typeof(EstadoCivil));
+            cbo_ECivil.SelectedIndex = 0;
+            cbo_sexo.ItemsSource = Enum.GetValues(typeof(Sexo));
+            cbo_sexo.SelectedIndex = 0;
+        }
+
+        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente cli = new Cliente();
+                cli.Rut = txtRut.Text;
+                cli.Nombre = txtNombre.Text;
+                cli.Apellidos = txtApellido.Text;
+                cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+                   
         }
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
