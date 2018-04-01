@@ -87,7 +87,10 @@ namespace Vista
         {
             try
             {
-                int fila=tbl_mantenedor.
+                int fila = tbl_mantenedor.SelectedIndex;
+                Boolean Eliminar;
+                daoClienteCollection cl = new daoClienteCollection();
+                String rut = "" + tablita.GetValueat();
             }
             catch (Exception)
             {
