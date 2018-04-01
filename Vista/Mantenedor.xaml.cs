@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace Vista
 {
     /// <summary>
-    /// Lógica de interacción para Buscar1.xaml
+    /// Lógica de interacción para Mantenedor.xaml
     /// </summary>
-    public partial class Buscar1 : Window
+    public partial class Mantenedor : Window
     {
-        public Buscar1()
+        public Mantenedor()
         {
             InitializeComponent();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
