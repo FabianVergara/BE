@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace Vista
 {
@@ -23,7 +24,16 @@ namespace Vista
     {
         public Mantenedor()
         {
+
             InitializeComponent();
+            DataTable tablita = new DataTable();
+            tablita.Columns.Add("Rut");
+            tablita.Columns.Add("Nombre");
+            tablita.Columns.Add("Apellidos");
+            tablita.Columns.Add("Fec_N");
+            tablita.Columns.Add("Sexo");
+            tablita.Columns.Add("Est_civ");
+
         }
         
         
