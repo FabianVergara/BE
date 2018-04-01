@@ -33,7 +33,21 @@ namespace Vista
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                Cliente cli = new Cliente();
+                cli.Rut = txtRut.Text;
+                cli.Nombre = txtNombre.Text;
+                cli.Apellidos = txtApellido.Text;
+                cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+                   
         }
     }
 }

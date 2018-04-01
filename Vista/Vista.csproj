@@ -153,6 +153,16 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClienteCollection\Controlador.csproj">
+      <Project>{048cf498-3088-403c-8986-bfb6036b4e6a}</Project>
+      <Name>Controlador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SegurosBeLife\Biblioteca.csproj">
+      <Project>{1f1214f0-7a5a-4d84-bcff-eb4bd7109327}</Project>
+      <Name>Biblioteca</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
