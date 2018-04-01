@@ -22,11 +22,12 @@ namespace Vista
     /// </summary>
     public partial class Mantenedor : Window
     {
+        DataTable tablita = new DataTable();
         public Mantenedor()
         {
 
             InitializeComponent();
-            DataTable tablita = new DataTable();
+            
             tablita.Columns.Add("Rut");
             tablita.Columns.Add("Nombre");
             tablita.Columns.Add("Apellidos");
@@ -72,7 +73,7 @@ namespace Vista
                 Cliente cli = new Cliente();
                 cli.Rut = txt_rut.Text;
                 daoClienteCollection cl = new daoClienteCollection();
-                tablita.AddRow(cl.Buscar(cli.Rut));
+                tablita.Rows.Add(cl.Buscar(cli.Rut));
                 tbl_mantenedor.IsItemItsOwnContainer(tablita);
             }
             catch (Exception)
