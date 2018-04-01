@@ -33,5 +33,20 @@ namespace Vista
         {
 
         }
+
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_actualizar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

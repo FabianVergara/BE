@@ -23,5 +23,15 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void btnRegistro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCerrarSe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
