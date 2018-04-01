@@ -72,7 +72,8 @@ namespace Vista
                 Cliente cli = new Cliente();
                 cli.Rut = txt_rut.Text;
                 daoClienteCollection cl = new daoClienteCollection();
-                
+                tablita.AddRow(cl.Buscar(cli.Rut));
+                tbl_mantenedor.IsItemItsOwnContainer(tablita);
             }
             catch (Exception)
             {
@@ -85,7 +86,7 @@ namespace Vista
         {
             try
             {
-
+                int fila=tbl_mantenedor.
             }
             catch (Exception)
             {
