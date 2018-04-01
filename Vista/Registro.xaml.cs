@@ -40,12 +40,22 @@ namespace Vista
                 cli.Nombre = txtNombre.Text;
                 cli.Apellidos = txtApellido.Text;
                 cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
-
+                cli.Sexo = (Char)cbo_sexo.SelectedValue;
+                cli.Estado = (Char)cbo_ECivil.SelectedValue;
+                ClienteCollection cl = new ClienteCollection();
+                bool resp=cl.Registrar(cli);
+                if (resp == true)
+                {
+                    MessageBox.Show("Cliente Registrado");
+                }
+                else
+                {
+                    MessageBox.Show("No Ha Sido Posible Procesar Su Solicitud");
+                }
             }
-            catch (Exception)
+            catch (Exception )
             {
-
-                throw;
+                MessageBox.Show("Error");
             }
                    
         }

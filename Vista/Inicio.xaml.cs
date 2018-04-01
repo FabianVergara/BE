@@ -23,5 +23,11 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void btnCerrarSe_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow ventana =new MainWindow();
+            ventana.Show();
+        }
     }
 }

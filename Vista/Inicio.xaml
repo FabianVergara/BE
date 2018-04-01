@@ -13,7 +13,7 @@
                 <Button x:Name="btnRegistro" Content="Registro Cliente" Margin="0,51,170,177"/>
                 <Button x:Name="btnBuscar" Content="Buscar Cliente" HorizontalAlignment="Left" Margin="0,73,0,0" VerticalAlignment="Top" Width="102"/>
                 <Button x:Name="btnActualizar" Content="Actualizar Cliente" HorizontalAlignment="Left" Margin="0,95,0,0" VerticalAlignment="Top" Width="102"/>
-                <Button x:Name="btnCerrarSe" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="0,117,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.098,0.424"/>
+                <Button x:Name="btnCerrarSe" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="0,117,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.098,0.424" Click="btnCerrarSe_Click"/>
                 <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="144,51,0,0" VerticalAlignment="Top" Width="111"/>
             </Grid>
         </GroupBox>
