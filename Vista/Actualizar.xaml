@@ -20,7 +20,7 @@
                     <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="225,87,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="40,156,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False" IsEnabled="False"/>
+                    <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False"/>
                     <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="18" Margin="125,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
                     <TextBox x:Name="txt_apellidos" HorizontalAlignment="Left" Height="18" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
                     <DatePicker x:Name="dpk_fechanaci" HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
