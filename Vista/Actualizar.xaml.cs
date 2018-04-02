@@ -44,7 +44,7 @@ namespace Vista
             {
                 //revisar
                 Cliente cli = new Cliente();
-                cli.Rut = txt_rut.Text;
+                
                 cli.Nombre = txt_nombre.Text;
                 cli.Apellidos = txt_apellidos.Text;
                 cli.FechaNaci = (DateTime)dpk_fechanaci.SelectedDate;
