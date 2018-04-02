@@ -94,7 +94,8 @@ namespace Vista
                 //String rut = tbl_mantenedor.GetDetailsVisibilityForItem(fila).ToString();
                 String rut = tbl_mantenedor.ColumnFromDisplayIndex(0).GetCellContent(fila).ToString();
                 Eliminar=cl.Eliminar(rut);
-                if (Eliminar == true) { MessageBox.Show("Cliente eliminado")
+                if (Eliminar == true) {
+                    MessageBox.Show("Cliente eliminado");
                         } else MessageBox.Show("Cliente no se ha podido eliminar");
             }
             catch (Exception)
