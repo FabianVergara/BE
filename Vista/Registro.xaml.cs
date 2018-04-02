@@ -43,16 +43,16 @@ namespace Vista
                         //ESTADO CIVIL
                         if (cbo_ECivil.SelectedValue.Equals("Soltero"))
                         {
-                                cli.Estado = 'S'; }
+                                cli.Estado = (char)'S'; }
                         else
                         {   if (cbo_ECivil.SelectedValue.Equals("Casado"))
-                                {   cli.Estado = 'C'; }
+                                {   cli.Estado = (char)'C'; }
                             else {
                                    if (cbo_ECivil.SelectedValue.Equals("Viudo"))
-                                        { cli.Estado = 'V'; }
+                                        { cli.Estado = (char)'V'; }
                                    else
                                     {   if (cbo_ECivil.SelectedValue.Equals("Divorciado"))
-                                             { cli.Estado = 'D'; }
+                                             { cli.Estado = (char)'D'; }
                                     }
                                  }
                
@@ -92,6 +92,7 @@ namespace Vista
         {
             Inicio ventana = new Vista.Inicio();
             ventana.Show();
+            this.Close();
         }
 
         private void cbo_sexo_SelectionChanged(object sender, SelectionChangedEventArgs e)
