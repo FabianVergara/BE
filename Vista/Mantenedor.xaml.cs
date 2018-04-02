@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data;
 
+
 namespace Vista
 {
     /// <summary>
@@ -90,7 +91,8 @@ namespace Vista
                 int fila = tbl_mantenedor.SelectedIndex;
                 Boolean Eliminar;
                 daoClienteCollection cl = new daoClienteCollection();
-                String rut = tbl_mantenedor.GetDetailsVisibilityForItem(fila).ToString();
+                //String rut = tbl_mantenedor.GetDetailsVisibilityForItem(fila).ToString();
+                String rut = tbl_mantenedor.ColumnFromDisplayIndex(0).GetCellContent(fila).ToString();
                 Eliminar=cl.Eliminar(rut);
                 if (Eliminar == true) {
                     MessageBox.Show("Cliente eliminado");

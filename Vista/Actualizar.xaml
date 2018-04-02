@@ -20,14 +20,14 @@
                     <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="225,87,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="40,156,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False" IsEnabled="False"/>
+                    <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False"/>
                     <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="18" Margin="125,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
                     <TextBox x:Name="txt_apellidos" HorizontalAlignment="Left" Height="18" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
                     <DatePicker x:Name="dpk_fechanaci" HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
                     <ComboBox x:Name="cbo_sexo" HorizontalAlignment="Left" Margin="123,138,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
                     <ComboBox x:Name="cbo_estado" HorizontalAlignment="Left" Margin="123,164,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
                     <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
-                    <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="258,239,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
+                    <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="258,239,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="btn_actualizar_Click"/>
                     <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="23" Margin="107,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_buscar_TextChanged"/>
                     <Label x:Name="label6" Content="Buscar por Rut" HorizontalAlignment="Left" Margin="9,7,0,0" VerticalAlignment="Top"/>
                 </Grid>

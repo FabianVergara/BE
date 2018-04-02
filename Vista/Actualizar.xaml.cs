@@ -44,6 +44,11 @@ namespace Vista
 
             }
         }
+
+        private void btn_actualizar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
     }
 
