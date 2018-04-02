@@ -38,11 +38,7 @@ namespace Vista
 
         private void txt_buscar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string rut = txt_buscar.Text;
-            if (rut.Length >= 9)
-            {
-
-            }
+           
         }
 
         private void btn_actualizar_Click(object sender, RoutedEventArgs e)
@@ -123,6 +119,12 @@ namespace Vista
                 MessageBox.Show("Error" + ex);
             }
             }
+
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            Actualizar ventana = new Vista.Actualizar();
+            ventana.Show();
+        }
     }
     }
 

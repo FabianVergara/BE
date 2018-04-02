@@ -26,7 +26,7 @@
                     <DatePicker x:Name="dpk_fechanaci" HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
                     <ComboBox x:Name="cbo_sexo" HorizontalAlignment="Left" Margin="123,138,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
                     <ComboBox x:Name="cbo_estado" HorizontalAlignment="Left" Margin="123,164,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
-                    <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
+                    <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9" Click="btn_volver_Click"/>
                     <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="258,239,0,0" VerticalAlignment="Top" Width="56" FontSize="9" Click="btn_actualizar_Click"/>
                     <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="23" Margin="107,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_buscar_TextChanged"/>
                     <Label x:Name="label6" Content="Buscar por Rut" HorizontalAlignment="Left" Margin="9,7,0,0" VerticalAlignment="Top"/>
