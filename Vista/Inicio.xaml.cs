@@ -28,18 +28,21 @@ namespace Vista
         {
             Registro venRe = new Registro();
             venRe.Show();
+            this.Close();
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
             Mantenedor venBuscar = new Mantenedor();
             venBuscar.Show();
+            this.Close();
         }
 
         private void btnActualizar_Click(object sender, RoutedEventArgs e)
         {
             Actualizar venUpdate = new Actualizar();
             venUpdate.Show();
+            this.Close();
         }
 
         private void btnCerrarSe_Click(object sender, RoutedEventArgs e)

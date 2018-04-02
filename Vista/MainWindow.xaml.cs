@@ -34,27 +34,25 @@ namespace Vista
         private void btn_aceptar_Click(object sender, RoutedEventArgs e)
         {
             daoClienteCollection cl =new daoClienteCollection();
-            Inicio ventana = new Inicio();
-                  ventana.Show();
-            //for (int i = 1; i < 4; i++)
-            //{
-            //    String usuario = txt_usuario.Text;
-            //    String contrasenna = txt_pass.Text;
+            
 
-            //    int result = cl.loggearse(usuario, contrasenna);
-            //    if (result >= 1)
-            //    {
-            //        Inicio ventana = new Inicio();
-            //        ventana.Show();
-            //    }
-            //    else
-            //    {
-            //        String j = i.ToString();
-            //        MessageBox.Show("Le quedan {0} intentos", j);
-            //    }
-            //}
+            String usuario = txt_usuario.Text;
+            String contrasenna = txt_pass.Text;
 
-
+            int result = cl.loggearse(usuario, contrasenna);
+            if (result >= 1)
+            {
+                Inicio ventana = new Inicio();
+                ventana.Show();
+            }
+            else
+            {
+                
+                MessageBox.Show("Le quedan 2 intentos");
+            }
         }
+
+
     }
-}
+    }
+

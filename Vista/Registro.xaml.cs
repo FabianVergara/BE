@@ -92,6 +92,7 @@ namespace Vista
         {
             Inicio ventana = new Vista.Inicio();
             ventana.Show();
+            this.Close();
         }
 
         private void cbo_sexo_SelectionChanged(object sender, SelectionChangedEventArgs e)
