@@ -167,6 +167,25 @@ namespace ClienteCollection
 
 
         }
+        
+        public int loggearse(string usuario, string contrasenna)
+        {
+            try
+            {
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand("Select count(usuario) from usuarios where usuario=@usuario and contrasenna=@contrasenna", conexion);
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@contrassena", usuario);
+                int result = cmd.ExecuteNonQuery();
+                return result;            }
+            catch (Exception ex)
+            {
+
+                Logger.Mensaje(ex.Message);
+                return 0;
+                
+            }
+        }
     }
 }
 

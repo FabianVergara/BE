@@ -46,6 +46,7 @@ namespace Vista
         {
             MainWindow veninicio = new MainWindow();
             veninicio.Show();
+            this.Close();
         }
     }
 }

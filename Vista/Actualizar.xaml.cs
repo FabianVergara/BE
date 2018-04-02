@@ -30,20 +30,13 @@ namespace Vista
         {
             //la logica seria la siguiente tomo el rut del buscar y desplego los datos en cada elemento , es decir les doy los valores a cada celda, luego aplico 
             Cliente cli = new Cliente();
-            cli.Rut = txt_rut.Text;
+            cli.Rut = txt_buscar.Text;
             daoClienteCollection cl = new daoClienteCollection();
             String _rut = cl.Buscar(cli.Rut).Columns.Contains("Rut").ToString(); ;
-            
+            txt_rut.Text = cli.Rut;
         }
 
-        private void txt_buscar_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string rut = txt_buscar.Text;
-            if (rut.Length >= 9)
-            {
-
-            }
-        }
+        
 
         private void btn_actualizar_Click(object sender, RoutedEventArgs e)
         {
@@ -123,6 +116,13 @@ namespace Vista
                 MessageBox.Show("Error" + ex);
             }
             }
+
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            Inicio ventana = new Vista.Inicio();
+            ventana.Show();
+            this.Close();
+        }
     }
     }
 

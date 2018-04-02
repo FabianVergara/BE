@@ -46,6 +46,7 @@ namespace Vista
         {
             Inicio ventana = new Vista.Inicio();
             ventana.Show();
+            this.Close();
         }
 
        
