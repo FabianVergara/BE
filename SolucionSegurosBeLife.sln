@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "SegurosBeLife
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "ClienteCollection\Controlador.csproj", "{048CF498-3088-403C-8986-BFB6036B4E6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{C663F7F2-121C-408A-9A67-C199082A734B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{048CF498-3088-403C-8986-BFB6036B4E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{048CF498-3088-403C-8986-BFB6036B4E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{048CF498-3088-403C-8986-BFB6036B4E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C663F7F2-121C-408A-9A67-C199082A734B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C663F7F2-121C-408A-9A67-C199082A734B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C663F7F2-121C-408A-9A67-C199082A734B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C663F7F2-121C-408A-9A67-C199082A734B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

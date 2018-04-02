@@ -42,13 +42,11 @@ namespace Vista
 
         private void btn_volver_Click(object sender, RoutedEventArgs e)
         {
-
+            Inicio ventana = new Vista.Inicio();
+            ventana.Show();
         }
 
-        private void btn_actualizar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         private void btn_Listar_Click(object sender, RoutedEventArgs e)
         {
@@ -57,12 +55,13 @@ namespace Vista
             {
                 
                 daoClienteCollection cl = new daoClienteCollection();
-
+                tablita.Rows.Add(cl.Listar());
+                tbl_mantenedor.IsItemItsOwnContainer(tablita);
             }
             catch (Exception)
             {
 
-                MessageBox.Show("Error Buscar");
+                MessageBox.Show("Error Listar");
             }
         }
 
@@ -87,10 +86,14 @@ namespace Vista
         {
             try
             {
+                //debemos rescatar la fila y la columna rut para luego utilizarla en el metodo
                 int fila = tbl_mantenedor.SelectedIndex;
                 Boolean Eliminar;
                 daoClienteCollection cl = new daoClienteCollection();
-                
+                String rut = tbl_mantenedor.GetDetailsVisibilityForItem(fila).ToString();
+                Eliminar=cl.Eliminar(rut);
+                if (Eliminar == true) { MessageBox.Show("Cliente eliminado")
+                        } else MessageBox.Show("Cliente no se ha podido eliminar");
             }
             catch (Exception)
             {

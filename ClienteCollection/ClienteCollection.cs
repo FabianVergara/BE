@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using SegurosBeLife;//el nombre de la biblioteca que contiene el Modelo
+using System.Collections;
 
 namespace ClienteCollection
 {
-    public class ClienteCollection
+    public class daoClienteCollection
     {
         
 
@@ -17,7 +18,7 @@ namespace ClienteCollection
         SqlConnection conexion;
         String cadena = @"Data Source = SONY - PC\SQLEXPRESS;Initial Catalog = seguro; Integrated Security = True";
             //@"Data Source = url;Initial Catalog=seguro;Persist Security Info=True;User ID=Sony-PC\Sony;Password=''";
-        public ClienteCollection()
+        public daoClienteCollection()
         {
             //instanciar conexion
             conexion = new SqlConnection(cadena);
@@ -131,6 +132,7 @@ namespace ClienteCollection
                 Logger.Mensaje(ex.Message);
                 return null;
             }
+         
         }
 
         //actualizar

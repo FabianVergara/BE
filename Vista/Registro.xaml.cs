@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using SegurosBeLife;//MODELO
 using ClienteCollection;//CONTROLADOR
 
-
 namespace Vista
 {
     /// <summary>
@@ -41,8 +40,8 @@ namespace Vista
                 cli.Nombre = txtNombre.Text;
                 cli.Apellidos = txtApellido.Text;
                 cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
-                cli.Sexo = (char)cbo_sexo.SelectedValue; //Aqui da error 
-                cli.Estado = (char)cbo_ECivil.SelectedValue;
+                cli.Sexo = (Char)cbo_sexo.SelectedValue;
+                cli.Estado = (Char)cbo_ECivil.SelectedValue;
                 daoClienteCollection cl = new daoClienteCollection();
                 bool resp=cl.Registrar(cli);
                 if (resp == true)
@@ -54,12 +53,17 @@ namespace Vista
                     MessageBox.Show("No Ha Sido Posible Procesar Su Solicitud");
                 }
             }
-            catch (Exception  )
+            catch (Exception )
             {
                 MessageBox.Show("Error");
             }
                    
         }
 
+        private void btn_volver_Click(object sender, RoutedEventArgs e)
+        {
+            Inicio ventana = new Vista.Inicio();
+            ventana.Show();
+        }
     }
 }
