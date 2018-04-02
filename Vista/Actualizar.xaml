@@ -8,33 +8,30 @@
         Title="Seguros BeLife" Height="337" Width="447">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="71*"/>
-            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Grid Margin="0,0,-33,-13" Grid.ColumnSpan="2">
-            <GroupBox x:Name="groupBox" Header="Actualizar" Margin="29,0,37,-11" FontWeight="Bold" Height="301" VerticalAlignment="Top">
-                <Grid Margin="0,8,0,0" Background="#FFF7F702" HorizontalAlignment="Left" Width="384" Height="262" VerticalAlignment="Top" IsHitTestVisible="False">
-                    <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="40,73,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label2" Content="Apellidos:" HorizontalAlignment="Left" Margin="40,104,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="225,87,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="40,156,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="125,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False" IsEnabled="False"/>
-                    <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="18" Margin="125,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                    <TextBox x:Name="txt_apellidos" HorizontalAlignment="Left" Height="18" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
-                    <DatePicker x:Name="dpk_fechanaci" HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
-                    <ComboBox x:Name="cbo_sexo" HorizontalAlignment="Left" Margin="123,138,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
-                    <ComboBox x:Name="cbo_estado" HorizontalAlignment="Left" Margin="123,164,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal"/>
-                    <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
-                    <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="258,239,0,0" VerticalAlignment="Top" Width="56" FontSize="9"/>
-                    <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="23" Margin="107,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_buscar_TextChanged"/>
-                    <Label x:Name="label6" Content="Buscar por Rut" HorizontalAlignment="Left" Margin="9,7,0,0" VerticalAlignment="Top"/>
-                </Grid>
-            </GroupBox>
-            <Button x:Name="btn_buscar" Content="Buscar" HorizontalAlignment="Left" Margin="293,36,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0,0" Click="btn_buscar_Click"/>
+        <GroupBox x:Name="groupBox" Header="Actualizar" Margin="19,0,10,0" FontWeight="Bold" Height="297" VerticalAlignment="Top">
+            <Grid Background="#FFF7F702" HorizontalAlignment="Left" Width="400" Height="287" VerticalAlignment="Top" IsHitTestVisible="False" Margin="-15,0,0,-12">
+                <Label x:Name="label" Content="Rut:" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label1" Content="Nombre:" HorizontalAlignment="Left" Margin="40,73,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label2" Content="Apellidos:" HorizontalAlignment="Left" Margin="40,104,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="206,73,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="Sexo:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="Estado Civil:" HorizontalAlignment="Left" Margin="40,156,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label6" Content="Buscar por Rut" HorizontalAlignment="Left" Margin="9,7,0,0" VerticalAlignment="Top"/>           
 
-        </Grid>
-
+            </Grid>
+        </GroupBox>
+        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="18" Margin="136,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
+        <TextBox x:Name="txt_apellidos" HorizontalAlignment="Left" Height="18" Margin="138,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="11" FontWeight="Normal"/>
+        <DatePicker x:Name="dpk_fechanaci" HorizontalAlignment="Left" Margin="225,118,0,0" VerticalAlignment="Top" FontSize="9" FontWeight="Normal"/>
+        <ComboBox x:Name="cbo_sexo" HorizontalAlignment="Left" Margin="136,154,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal" SelectionChanged="cbo_sexo_SelectionChanged"/>
+        <ComboBox x:Name="cbo_estado" HorizontalAlignment="Left" Margin="136,177,0,0" VerticalAlignment="Top" Width="76" FontSize="9" FontWeight="Normal" SelectionChanged="cbo_estado_SelectionChanged"/>
+        <Button x:Name="btn_volver" Content="Volver" HorizontalAlignment="Left" Margin="64,239,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.342,0.045" FontSize="9"/>
+        <TextBox x:Name="txt_buscar" HorizontalAlignment="Left" Height="23" Margin="125,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txt_buscar_TextChanged"/>
+        <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="18" Margin="136,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="10" FontWeight="Normal" TextChanged="textBox_TextChanged" IsUndoEnabled="False" IsTabStop="False"/>
+        <Button x:Name="btn_buscar" Content="Buscar" HorizontalAlignment="Left" Margin="299,27,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0,0" Click="btn_buscar_Click" Height="22"/>
+        <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="299,235,0,0" VerticalAlignment="Top" Width="75" Click="btn_actualizar_Click" Height="23"/>
     </Grid>
 </Window>

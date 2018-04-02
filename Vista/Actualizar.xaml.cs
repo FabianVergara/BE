@@ -24,6 +24,10 @@ namespace Vista
         public Actualizar()
         {
             InitializeComponent();
+            cbo_estado.ItemsSource = Enum.GetValues(typeof(EstadoCivil));
+            cbo_estado.SelectedIndex = 0;
+            cbo_sexo.ItemsSource = Enum.GetValues(typeof(Sexo));
+            cbo_sexo.SelectedIndex = 0;
         }
 
         private void btn_buscar_Click(object sender, RoutedEventArgs e)
@@ -38,12 +42,99 @@ namespace Vista
 
         private void txt_buscar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string rut = txt_buscar.Text;
-            if (rut.Length >= 9)
-            {
 
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btn_actualizar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente cli = new Cliente();
+                cli.Rut = txt_rut.Text;
+                cli.Nombre = txt_nombre.Text;
+                cli.Apellidos = txt_apellidos.Text;
+                cli.FechaNaci = (DateTime)dpk_fechanaci.SelectedDate;
+                string sexo= cbo_sexo.SelectedValue.ToString();
+                string estado= cbo_estado.SelectedValue.ToString();
+                char sex;
+                char estadoC;
+                if (sexo == "Masculino")
+                {
+                     sex = 'M';
+                }
+                else
+                {
+                    if (sexo == "Femenino") {
+                         sex = 'F';
+                    }
+                    else
+                    {
+                        sex = 'O';
+                    }
+
+                }
+                if (estado == "Soltero") {
+                    estadoC = 'S';
+                }
+                else
+                {
+                    if (estado == "Casado") {
+                        estadoC = 'C';
+                    }
+                    else
+                    {
+                        if (estado == "Divorciado") {
+                            estadoC = 'D';
+                        }
+                        else
+                        {
+                            estadoC = 'V';
+                        }
+                    }
+                }      
+        
+                cli.Sexo = sex;
+                cli.Estado = estadoC;
+          
+                if (cli.Rut != "")
+                {
+                    daoClienteCollection cl = new daoClienteCollection();
+                    bool resp = cl.Actualizar(cli,cli);
+                    if (resp == true)
+                    {
+                        MessageBox.Show("Cliente Actualizado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Ha Sido Posible Procesar Su Solicitud");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Debe ingresar todos los campos");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+
+        }
+
+        private void cbo_estado_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void cbo_sexo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
     }
-}
+

@@ -8,6 +8,6 @@ namespace SegurosBeLife
 {
     public enum Sexo
     {
-        Feminino,Masculino,Otros
+        Femenino,Masculino,Otros
     }
 }
