@@ -40,7 +40,7 @@ namespace Vista
                 cli.Nombre = txtNombre.Text;
                 cli.Apellidos = txtApellido.Text;
                 cli.FechaNaci = (DateTime)dpkFechaN.SelectedDate;
-                
+                        //ESTADO CIVIL
                         if (cbo_ECivil.SelectedValue.Equals("Soltero"))
                         {
                                 cli.Estado = 'S'; }
@@ -57,17 +57,18 @@ namespace Vista
                                  }
                
                         }
-                if (cbo_sexo.SelectedValue.Equals("Femenino"))
-                {
-                    cli.Sexo = 'F'; }
-                else {
-                    if (cbo_sexo.SelectedValue.Equals("Masculino")) { 
-                        cli.Sexo = 'M'; }
-                        else
-                    { 
-                        cli.Sexo = 'O';//Otro
-                    } 
-                }
+                        //SEXO
+                        if (cbo_sexo.SelectedValue.Equals("Femenino"))
+                        {
+                            cli.Sexo = 'F'; }
+                        else {
+                            if (cbo_sexo.SelectedValue.Equals("Masculino")) { 
+                                cli.Sexo = 'M'; }
+                                else
+                            { 
+                                cli.Sexo = 'O';//Otro
+                            } 
+                        }
                 
                 daoClienteCollection cl = new daoClienteCollection();
                 bool resp=cl.Registrar(cli);
