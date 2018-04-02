@@ -49,6 +49,7 @@ namespace Vista
         {
             try
             {
+                //revisar
                 Cliente cli = new Cliente();
                 cli.Rut = txt_rut.Text;
                 cli.Nombre = txt_nombre.Text;
