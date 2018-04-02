@@ -94,10 +94,18 @@ namespace Vista
                 daoClienteCollection cl = new daoClienteCollection();
                 //String rut = tbl_mantenedor.GetDetailsVisibilityForItem(fila).ToString();
                 String rut = tbl_mantenedor.ColumnFromDisplayIndex(0).GetCellContent(fila).ToString();
-                Eliminar=cl.Eliminar(rut);
-                if (Eliminar == true) {
-                    MessageBox.Show("Cliente eliminado");
-                        } else MessageBox.Show("Cliente no se ha podido eliminar");
+                MessageBoxResult respuesta;
+                respuesta = MessageBox.Show("¿Desea continuar?", "Seleccione una Opcion", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (respuesta == MessageBoxResult.Yes)
+                {
+                    Eliminar = cl.Eliminar(rut);
+                    if (Eliminar == true)
+                    {
+                        MessageBox.Show("Cliente eliminado");
+                    }
+                    else MessageBox.Show("Cliente no se ha podido eliminar");
+                }
+                
             }
             catch (Exception)
             {
