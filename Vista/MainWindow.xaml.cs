@@ -38,18 +38,26 @@ namespace Vista
 
             String usuario = txt_usuario.Text;
             String contrasenna = txt_pass.Text;
+            var contador = 3;
+            int result = cl.loggearse(usuario, contrasenna); 
 
-            int result = cl.loggearse(usuario, contrasenna);
-            if (result >= 1)
-            {
-                Inicio ventana = new Inicio();
-                ventana.Show();
-            }
-            else
-            {
-                
-                MessageBox.Show("Le quedan 2 intentos");
-            }
+                if (result >= 1)
+                {
+                    Inicio ventana = new Inicio();
+                    ventana.Show();
+                }
+                else
+                {
+                        if (contador != 0) {
+                            contador--;
+                            MessageBox.Show("Le quedan " + contador + " intentos");
+                        }                         
+                           
+                        
+                }
+            
+           
+    
         }
 
 
